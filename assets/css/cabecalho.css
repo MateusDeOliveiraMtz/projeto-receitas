@@ -1,0 +1,55 @@
+.cabecalho{
+    align-items: center;
+    background-color: #f9f9f9;
+    display: flex;
+    
+    
+}
+
+.menu__lista{
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    
+}
+
+.menu__link{
+    color:#4b4a4a;
+    cursor: pointer;
+    text-decoration: none;
+    
+    
+}
+
+.menu__link:hover{
+    text-decoration: underline;
+}
+
+span{
+    color: #333333;
+    font-weight: bold;
+}
+
+@media screen and ( min-width:0){
+    .cabecalho{
+        gap: 1rem;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .logo{
+        display: none;
+    }
+
+}
+
+@media screen and ( min-width:768px){
+    .cabecalho{
+        padding: 0 5rem;
+        justify-content: space-between;
+    }
+
+    .logo{
+        display: block;
+    }
+}
